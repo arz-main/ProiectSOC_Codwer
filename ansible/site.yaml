@@ -1,0 +1,8 @@
+- hosts: vuln_node
+  become: true
+  roles:
+    - {role: mariadb, tags: mariadb}
+    - {role: apache2, tags: apache2}
+    - cdmapp
+    - {role: wazuhagent, tags: wazuhagent}
+    - services

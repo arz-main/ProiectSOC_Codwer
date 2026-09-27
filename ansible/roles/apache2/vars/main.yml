@@ -1,0 +1,4 @@
+db_host: "127.0.0.1"
+db_name: "cdms"
+db_username: "cdm_user"
+db_password: "password"

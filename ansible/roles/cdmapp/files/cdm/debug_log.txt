@@ -1,0 +1,60 @@
+POST Data: Array
+(
+    [order_id] => 46
+    [delivery_reference_number] => DRN-jb2vn76gi
+    [delivery_date] => 2024-07-19
+    [order_status] => Cancelled
+    [delivery_remarks] => 
+    [cancellation_reason] => 
+)
+
+FILES Data: Array
+(
+    [uploaded_file_cancelled] => Array
+        (
+            [name] => OKO Wireframe 3.pdf
+            [full_path] => OKO Wireframe 3.pdf
+            [type] => application/pdf
+            [tmp_name] => C:\xampp\tmp\phpA2C6.tmp
+            [error] => 0
+            [size] => 2744299
+        )
+
+)
+
+SQL Query: UPDATE customer_orders SET 
+                    order_status = 'Cancelled', 
+                    cancellation_reason = '', 
+                    uploaded_file = 'OKO Wireframe 3.pdf',
+                    status_updated_at = '2024-07-19 05:28:26' 
+                WHERE order_id = 46
+POST Data: Array
+(
+    [order_id] => 46
+    [delivery_reference_number] => DRN-j5m6n2eo0
+    [delivery_date] => 2024-07-19
+    [order_status] => Cancelled
+    [delivery_remarks] => 
+    [cancellation_reason] => 
+)
+
+FILES Data: Array
+(
+    [uploaded_file_cancelled] => Array
+        (
+            [name] => OKO Wireframe 5.pdf
+            [full_path] => OKO Wireframe 5.pdf
+            [type] => application/pdf
+            [tmp_name] => C:\xampp\tmp\phpFA9B.tmp
+            [error] => 0
+            [size] => 2550731
+        )
+
+)
+
+SQL Query: UPDATE customer_orders SET 
+                    order_status = 'Cancelled', 
+                    cancellation_reason = '', 
+                    uploaded_file = 'OKO Wireframe 5.pdf',
+                    status_updated_at = '2024-07-19 05:28:48' 
+                WHERE order_id = 46

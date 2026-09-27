@@ -1,0 +1,2 @@
+wazuh_manager: "192.168.1.25"
+wazuh_authd_password: "password"

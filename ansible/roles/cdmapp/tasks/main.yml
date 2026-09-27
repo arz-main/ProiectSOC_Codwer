@@ -1,0 +1,23 @@
+- name: Deploy the PHP app
+  copy:
+    src: files/cdm.tar.gz
+    dest: /var/www/html/cdm.tar.gz
+    owner: www-data
+    group: www-data
+    mode: '0644'
+
+- name: Create app directory
+  file:
+    path: /var/www/html/app
+    state: directory
+    owner: www-data
+    group: www-data
+    mode: '0755'
+
+- name: Extract application
+  unarchive:
+    src: /var/www/html/cdm.tar.gz
+    dest: /var/www/html/app
+    remote_src: true
+    owner: www-data
+    group: www-data

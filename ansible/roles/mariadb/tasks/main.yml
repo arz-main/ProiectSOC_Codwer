@@ -1,0 +1,74 @@
+- name: Install MariaDB
+  apt:
+    name:
+      - mariadb-server
+      - python3-pymysql
+    state: present
+    update_cache: true
+
+- name: Start MariaDB
+  shell: |
+    service mariadb start || mysqld_safe --datadir=/var/lib/mysql &
+  args:
+    executable: /bin/bash
+
+- name: Wait for MariaDB socket
+  ansible.builtin.wait_for:
+    path: /run/mysqld/mysqld.sock
+    state: present
+    timeout: 30
+
+- name: Create CDMS database
+  community.mysql.mysql_db:
+    name: "{{ db_name }}"
+    state: present
+    login_unix_socket: /run/mysqld/mysqld.sock
+
+- name: Create CDMS database user
+  community.mysql.mysql_user:
+    name: "{{ db_username }}"
+    password: "{{ db_password }}"
+    host: "{{ db_host }}"
+    priv: "{{ db_name }}.*:ALL"
+    state: present
+    login_unix_socket: /run/mysqld/mysqld.sock
+
+- name: Check whether CDMS database contains tables
+  community.mysql.mysql_query:
+    login_unix_socket: /run/mysqld/mysqld.sock
+    login_db: "{{ db_name }}"
+    query: |
+      SELECT COUNT(*) AS table_count
+      FROM information_schema.tables
+      WHERE table_schema = '{{ db_name }}';
+  register: cdms_table_check
+  changed_when: false
+
+- name: Set CDMS initialization status
+  ansible.builtin.set_fact:
+    cdms_initialized: "{{ cdms_table_check.query_result[0][0].table_count | int > 0 }}"
+
+- name: Show CDMS initialization status
+  ansible.builtin.debug:
+    msg: "CDMS database already initialized: {{ cdms_initialized }}"
+
+- name: Copy cdms.sql to database server
+  ansible.builtin.copy:
+    src: cdms.sql
+    dest: /tmp/cdms.sql
+    mode: '0600'
+  when: not cdms_initialized
+
+- name: Import CDMS SQL dump
+  community.mysql.mysql_db:
+    name: "{{ db_name }}"
+    state: import
+    target: /tmp/cdms.sql
+    login_unix_socket: /run/mysqld/mysqld.sock
+  when: not cdms_initialized
+
+- name: Remove SQL dump
+  ansible.builtin.file:
+    path: /tmp/cdms.sql
+    state: absent
+  when: not cdms_initialized

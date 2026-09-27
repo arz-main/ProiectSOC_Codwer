@@ -1,0 +1,138 @@
+<mxfile host="Electron">
+  <diagram name="Page-1" id="8KmI0-dOWtrg5aytORnl">
+    <mxGraphModel dx="930" dy="581" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="UPT7TAvTEfuGMY9wIXCT-29" edge="1" parent="1" source="UPT7TAvTEfuGMY9wIXCT-14" style="endArrow=none;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;" target="UPT7TAvTEfuGMY9wIXCT-15" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="242" y="439" as="sourcePoint" />
+            <mxPoint x="140" y="390" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="UPT7TAvTEfuGMY9wIXCT-27" edge="1" parent="1" source="UPT7TAvTEfuGMY9wIXCT-2" style="endArrow=none;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;" target="UPT7TAvTEfuGMY9wIXCT-5" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="362" y="139" as="sourcePoint" />
+            <mxPoint x="260" y="90" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="UPT7TAvTEfuGMY9wIXCT-2" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" value="SOC Admin" vertex="1">
+          <mxGeometry height="60" width="30" x="240" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="UPT7TAvTEfuGMY9wIXCT-5" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Vizualizează alertele&lt;/span&gt;" vertex="1">
+          <mxGeometry height="70" width="140" x="185" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="UPT7TAvTEfuGMY9wIXCT-6" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Vizualizează statistici despre starea sistemului&lt;/span&gt;" vertex="1">
+          <mxGeometry height="70" width="140" x="45" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="UPT7TAvTEfuGMY9wIXCT-7" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Investighează un eveniment&lt;/span&gt;" vertex="1">
+          <mxGeometry height="70" width="140" x="300" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="UPT7TAvTEfuGMY9wIXCT-8" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Configurează agentul și aplicația vulnerabilă&lt;/span&gt;" vertex="1">
+          <mxGeometry height="70" width="140" x="80" y="210" as="geometry" />
+        </mxCell>
+        <mxCell id="UPT7TAvTEfuGMY9wIXCT-14" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" value="Agent Wazuh" vertex="1">
+          <mxGeometry height="60" width="30" x="240" y="420" as="geometry" />
+        </mxCell>
+        <mxCell id="UPT7TAvTEfuGMY9wIXCT-15" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Trimite informații managerului Wazuh&lt;/span&gt;" vertex="1">
+          <mxGeometry height="70" width="140" x="110" y="340" as="geometry" />
+        </mxCell>
+        <mxCell id="UPT7TAvTEfuGMY9wIXCT-17" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Execută comenzi pe gazdă" vertex="1">
+          <mxGeometry height="70" width="140" x="45" y="440" as="geometry" />
+        </mxCell>
+        <mxCell id="UPT7TAvTEfuGMY9wIXCT-22" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Colectează informații despre evenimentele de pe gazdă&lt;/span&gt;" vertex="1">
+          <mxGeometry height="70" width="140" x="300" y="380" as="geometry" />
+        </mxCell>
+        <mxCell id="UPT7TAvTEfuGMY9wIXCT-24" edge="1" parent="1" source="UPT7TAvTEfuGMY9wIXCT-15" style="endArrow=open;endSize=12;dashed=1;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0;entryDx=0;entryDy=0;" target="UPT7TAvTEfuGMY9wIXCT-22" value="include">
+          <mxGeometry relative="1" width="160" x="-0.0005" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="320" y="480" as="sourcePoint" />
+            <mxPoint x="340" y="300" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="UPT7TAvTEfuGMY9wIXCT-25" edge="1" parent="1" source="UPT7TAvTEfuGMY9wIXCT-2" style="endArrow=none;html=1;rounded=0;entryX=1;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;" target="UPT7TAvTEfuGMY9wIXCT-8" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="300" y="320" as="sourcePoint" />
+            <mxPoint x="350" y="270" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="UPT7TAvTEfuGMY9wIXCT-26" edge="1" parent="1" source="UPT7TAvTEfuGMY9wIXCT-2" style="endArrow=none;html=1;rounded=0;entryX=1.02;entryY=0.582;entryDx=0;entryDy=0;exitX=0.5;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryPerimeter=0;" target="UPT7TAvTEfuGMY9wIXCT-6" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="295" y="220" as="sourcePoint" />
+            <mxPoint x="210" y="280" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="UPT7TAvTEfuGMY9wIXCT-28" edge="1" parent="1" source="UPT7TAvTEfuGMY9wIXCT-7" style="endArrow=none;html=1;rounded=0;entryX=0.5;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryPerimeter=0;" target="UPT7TAvTEfuGMY9wIXCT-2" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="402" y="169" as="sourcePoint" />
+            <mxPoint x="300" y="120" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="UPT7TAvTEfuGMY9wIXCT-30" edge="1" parent="1" source="UPT7TAvTEfuGMY9wIXCT-14" style="endArrow=none;html=1;rounded=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0.5;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;" target="UPT7TAvTEfuGMY9wIXCT-17" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="332" y="489" as="sourcePoint" />
+            <mxPoint x="230" y="440" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="UPT7TAvTEfuGMY9wIXCT-32" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Blochează o adresă ip&lt;/span&gt;" vertex="1">
+          <mxGeometry height="70" width="140" x="180" y="520" as="geometry" />
+        </mxCell>
+        <mxCell id="UPT7TAvTEfuGMY9wIXCT-33" edge="1" parent="1" source="UPT7TAvTEfuGMY9wIXCT-17" style="endArrow=open;endSize=12;dashed=1;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0;entryDx=0;entryDy=0;" target="UPT7TAvTEfuGMY9wIXCT-32" value="include">
+          <mxGeometry relative="1" width="160" x="-0.0005" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="310" y="500" as="sourcePoint" />
+            <mxPoint x="380" y="535" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="UPT7TAvTEfuGMY9wIXCT-34" edge="1" parent="1" source="UPT7TAvTEfuGMY9wIXCT-35" style="endArrow=none;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;" target="UPT7TAvTEfuGMY9wIXCT-36" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="362" y="739" as="sourcePoint" />
+            <mxPoint x="260" y="690" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="UPT7TAvTEfuGMY9wIXCT-35" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" value="Wazuh manager" vertex="1">
+          <mxGeometry height="60" width="30" x="240" y="740" as="geometry" />
+        </mxCell>
+        <mxCell id="UPT7TAvTEfuGMY9wIXCT-36" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;P&lt;/span&gt;rimește evenimentele de la agent" vertex="1">
+          <mxGeometry height="70" width="140" x="185" y="630" as="geometry" />
+        </mxCell>
+        <mxCell id="UPT7TAvTEfuGMY9wIXCT-37" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Corelează evenimentele" vertex="1">
+          <mxGeometry height="70" width="140" x="45" y="700" as="geometry" />
+        </mxCell>
+        <mxCell id="UPT7TAvTEfuGMY9wIXCT-38" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Aplică reguli de detecție" vertex="1">
+          <mxGeometry height="70" width="140" x="300" y="720" as="geometry" />
+        </mxCell>
+        <mxCell id="UPT7TAvTEfuGMY9wIXCT-39" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Trimite alerta către indexer&amp;nbsp;" vertex="1">
+          <mxGeometry height="70" width="140" x="80" y="810" as="geometry" />
+        </mxCell>
+        <mxCell id="UPT7TAvTEfuGMY9wIXCT-40" edge="1" parent="1" source="UPT7TAvTEfuGMY9wIXCT-35" style="endArrow=none;html=1;rounded=0;entryX=1;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;" target="UPT7TAvTEfuGMY9wIXCT-39" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="300" y="920" as="sourcePoint" />
+            <mxPoint x="350" y="870" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="UPT7TAvTEfuGMY9wIXCT-41" edge="1" parent="1" source="UPT7TAvTEfuGMY9wIXCT-35" style="endArrow=none;html=1;rounded=0;entryX=1.02;entryY=0.582;entryDx=0;entryDy=0;exitX=0.5;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryPerimeter=0;" target="UPT7TAvTEfuGMY9wIXCT-37" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="295" y="820" as="sourcePoint" />
+            <mxPoint x="210" y="880" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="UPT7TAvTEfuGMY9wIXCT-42" edge="1" parent="1" source="UPT7TAvTEfuGMY9wIXCT-38" style="endArrow=none;html=1;rounded=0;entryX=0.5;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryPerimeter=0;" target="UPT7TAvTEfuGMY9wIXCT-35" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="402" y="769" as="sourcePoint" />
+            <mxPoint x="300" y="720" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="UPT7TAvTEfuGMY9wIXCT-43" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Monitorizează aplicația vulnerabilă&lt;/span&gt;" vertex="1">
+          <mxGeometry height="70" width="140" x="325" y="460" as="geometry" />
+        </mxCell>
+        <mxCell id="UPT7TAvTEfuGMY9wIXCT-44" edge="1" parent="1" source="UPT7TAvTEfuGMY9wIXCT-43" style="endArrow=none;html=1;rounded=0;entryX=0.5;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryPerimeter=0;" target="UPT7TAvTEfuGMY9wIXCT-14" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="365" y="520" as="sourcePoint" />
+            <mxPoint x="290" y="480" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

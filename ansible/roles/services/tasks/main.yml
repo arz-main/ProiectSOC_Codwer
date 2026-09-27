@@ -1,0 +1,23 @@
+- name: Enable and start Apache
+  systemd:
+    name: apache2
+    enabled: true
+    state: started
+    daemon_reload: true
+
+- name: Enable and start Wazuh agent
+  systemd:
+    name: wazuh-agent
+    enabled: true
+    state: started
+    daemon_reload: true
+
+- name: Restart Apache
+  systemd:
+    name: apache2
+    state: restarted
+
+- name: Restart Wazuh agent
+  systemd:
+    name: wazuh-agent
+    state: restarted

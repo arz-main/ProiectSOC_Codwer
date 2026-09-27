@@ -1,0 +1,8 @@
+---
+# vars file for mariadb
+# Database
+db_host: "localhost"
+db_name: "cdms"
+db_username: "cdm_user"
+db_password: "changeme"
+
